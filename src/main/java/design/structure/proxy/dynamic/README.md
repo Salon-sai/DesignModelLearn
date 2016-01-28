@@ -3,7 +3,7 @@
 原理
 -------
 -	所谓Dynamic Proxy 是这样的一个Class：
-	它是在运行时生成的class，在生成它时你必须提供一组interface给它，然后该class就宣称它实现了这些interface。你当然可以把该class的实例当作这些interface中的任何一个来用。当然，这个Dynamic Proxy其实是一个proxy，它不会你做任何实际的工作，在生成它的实例时，你必须提供一个handler，由他接管实际工作
+	它是在运行时生成的class，在生成它时你必须提供一组interface给它，然后该class就宣称它实现了这些interface。你当然可以把该class的实例当作这些interface中的任何一个来用。当然，这个Dynamic Proxy其实是一个proxy，它不会你做任何实际的工作，在生成它的实例时，你必须提供一个handler，由他接管实际工作。
 	
 动态代理步骤
 ---------------
