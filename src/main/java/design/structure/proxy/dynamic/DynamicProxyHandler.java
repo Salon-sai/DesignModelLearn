@@ -4,12 +4,19 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 
-public class DynamicSubject implements InvocationHandler
+public class DynamicProxyHandler implements InvocationHandler
 {
 
 	private Object sub;
 	
-	public DynamicSubject(Class<?> classType, Object... args) throws Exception
+	/**
+	 * 构建InvocationHandler的实现类，用于创建动态代理类
+	 * 
+	 * @param classType 目标类的Class类型
+	 * @param args 构建目标对象的构造函数所需的参数
+	 * @throws Exception
+	 */
+	public DynamicProxyHandler(Class<?> classType, Object... args) throws Exception
 	{
 		if(args != null)
 		{
