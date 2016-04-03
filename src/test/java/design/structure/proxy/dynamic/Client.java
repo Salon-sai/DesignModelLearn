@@ -10,7 +10,7 @@ public class Client
 	@Test
 	public void test() throws Exception
 	{
-		InvocationHandler handler = new DynamicSubject(RealSubject.class);
+		InvocationHandler handler = new DynamicProxyHandler(RealSubject.class);
 		
 		Class<?> clazz = handler.getClass();
 		
