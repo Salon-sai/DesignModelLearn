@@ -1,4 +1,4 @@
-package design.structure.Composite;
+package design.structure.composite;
 
 public interface Component
 {
